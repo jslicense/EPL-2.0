@@ -1,0 +1,19 @@
+{
+  "name": "epl-2.0",
+  "description": "Plaintext of The Eclipse Public License, Version 2.0 from www.eclipse.org",
+  "version": "0.0.0",
+  "files": [
+    "README.md",
+    "EPL-2.0.json",
+    "package.json"
+  ],
+  "keywords": [
+    "jslicense",
+    "license"
+  ],
+  "main": "EPL-2.0.json",
+  "repository": "jslicense/EPL-2.0",
+  "scripts": {
+    "prepublish": "node -e \"process.stdout.write(JSON.stringify(require('fs').readFileSync('EPL-2.0').toString()))\" > EPL-2.0.json"
+  }
+}
